@@ -4,9 +4,13 @@
     <div class="col-md-6">
         <div class="form-group">
             <label for="">Nama Pegawai</label>
-            <input type="text" name="nama_dokter" required value="<?=(isset($_POST['nama_pegawai']))?$_POST['nama_pegawai']:'';?>" class="form-control">
-            <input type="hidden" name="id_pegawai"  value="<?=(isset($_POST['id_pegawai']))?$_POST['id_pegawai']:'';?>" class="form-control">
-            <span class="text-danger"><?=(isset($err['nama_pegawai']))?$err['nama_pegawai']:'';?></span>
+            <input type="text" name="nama" required value="<?=(isset($_POST['nama']))?$_POST['nama']:'';?>" class="form-control">
+            <span class="text-danger"><?=(isset($err['nama']))?$err['nama']:'';?></span>
+        </div>
+        <div class="form-group">
+        <label for="">Email</label>
+            <input type="email" name="email" value="<?=(isset($_POST['email']))?$_POST['email']:'';?>" class="form-control">
+            <span class="text-danger"><?=(isset($err['email']))?$err['email']:'';?></span>
         </div>
         <div class="form-group">
         <label for="">Alamat</label>
@@ -15,12 +19,17 @@
         </div>
         <div class="form-group">
         <label for="">Nomor Telfon</label>
-            <input type="number" name="notelp_pegawai" value="<?=(isset($_POST['notelp_pegawai']))?$_POST['nptelp_pegawai']:'';?>" class="form-control">
-            <span class="text-danger"><?=(isset($err['notelp_pegawai']))?$err['notelp_pegawai']:'';?></span>
+            <input type="number" name="notelp" value="<?=(isset($_POST['notelp']))?$_POST['notelp']:'';?>" class="form-control">
+            <span class="text-danger"><?=(isset($err['notelp']))?$err['notelp']:'';?></span>
+        </div>
+        <div class="form-group">
+        <label for="">Jabatan</label>
+            <input type="text" name="jabatan" value="<?=(isset($_POST['jabatan']))?$_POST['jabatan']:'';?>" class="form-control">
+            <span class="text-danger"><?=(isset($err['jabatan']))?$err['jabatan']:'';?></span>
         </div>
     </div>
     <div class="form-group">
-            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="submit" name="add" class="btn btn-primary">Save</button>
     </div>
     </div>
 </form>

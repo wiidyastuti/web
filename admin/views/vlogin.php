@@ -15,7 +15,7 @@
         <div class="content center" >
             <hr>
             <div class="col-md-offset-4 col-md-4 ">
-                <form action="" method="POST">
+                <form action="" method="post">
                     <div class="form-group">
                         <label for="email">Email address:</label>
                         <input type="email" name="email" class="form-control" >

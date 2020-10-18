@@ -13,9 +13,9 @@
             }else{
                 return false;
             }
-            function site_url(){
-                return "http://localhost/db_tumpangsari/";
-            }
         }
+        function site_url(){
+            return "http://localhost/db_tumpangsari/";
+         }
     }
 ?>
